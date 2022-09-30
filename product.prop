@@ -33,3 +33,11 @@ ro.com.google.ime.kb_pad_port_b=1
 # Radio
 persist.vendor.qti.telephony.vt_cam_interface=2
 ro.telephony.block_binder_thread_on_incoming_calls=false
+
+# Power-saving props
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+ro.ril.disable.power.collapse=0
+power.saving.mode=1
+pm.sleep_mode=1
+

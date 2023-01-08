@@ -1,8 +1,8 @@
-# Corvus OS
+# Spark OS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_santoni.mk
+    $(LOCAL_DIR)/spark_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_santoni-userdebug \
-    corvus_santoni-user \
-    corvus_santoni-eng
+    spark_santoni-userdebug \
+    spark_santoni-user \
+    spark_santoni-eng

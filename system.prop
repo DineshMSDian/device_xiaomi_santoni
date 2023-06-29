@@ -171,3 +171,8 @@ persist.sys.wfd.virtual=0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Spark-OS
+ro.spark.device.name=Redmi 4X
+ro.spark.maintainer=Dinesh_DP
+ro.spark.maintainer.username=DineshMSDian

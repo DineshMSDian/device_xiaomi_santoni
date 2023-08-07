@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common AlphaDroid stuff.
+# Inherit some common RisingOSS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Prebuilt apps
@@ -38,12 +38,12 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
 
-# AlphaDroid Build Type & Maintainer stuff.
-ALPHA_MAINTAINER := DINESH
-ALPHA_BUILD_TYPE := UNOFFICIAL
-
-# SOC
-PROCESSOR_MODEL := MSM8937
+# Rice stuff
+RISING_CHIPSET := SD435
+RISING_MAINTAINER := Dinesh_DB
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_BUILD_APERTURE_CAMERA := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720

@@ -1,8 +1,8 @@
-# Corvus OS
+# Lineage
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_santoni.mk
+    $(LOCAL_DIR)/lineage_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_santoni-userdebug \
-    corvus_santoni-user \
-    corvus_santoni-eng
+    lineage_santoni-userdebug \
+    lineage_santoni-user \
+    lineage_santoni-eng

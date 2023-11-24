@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from santoni device
 $(call inherit-product, device/xiaomi/santoni/device.mk)
 
-# Inherit some common RisingOSS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Derpfest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Prebuilt apps
 $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
@@ -31,35 +31,13 @@ $(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := lineage_santoni
+PRODUCT_NAME := derp_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Rice stuff
-RISING_CHIPSET := SD435
-RISING_MAINTAINER := Dinesh_DB
-TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_USE_GOOGLE_TELEPHONY := false
-TARGET_BUILD_APERTURE_CAMERA := true
-
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
-
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8937
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
